@@ -1,7 +1,8 @@
 <template>
-  <div class="mx-auto text-white">
-    <h2 class="text-[4em]">home</h2>
-    <span @click="seguir">About</span>
+  <div>
+    <h1>404</h1>
+    <h2>NOT FOUND</h2>
+    <button @click="voltar">Voltar</button>
   </div>
 </template>
 
@@ -9,8 +10,8 @@
 import { useRouter } from "vue-router";
 const router = useRouter();
 
-const seguir = () => {
-  router.push("/about");
+const voltar = () => {
+  router.push("/login");
 };
 </script>
 
